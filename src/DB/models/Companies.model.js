@@ -6,6 +6,7 @@ const CompanySchema = new Schema(
     NameEN: { type: String, required: true },
     TaxRegistration: { type: String, required: true, unique: true },
     Customercode: { type: String, required: true, unique: true },
+    isActive: { type: Boolean, default: false },
   },
   { timestamps: true },
 );
